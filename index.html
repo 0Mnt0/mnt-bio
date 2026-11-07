@@ -14,7 +14,7 @@
         }
 
         body {
-            background-color: #0b0914;
+            background-color: #121214;
             color: #ffffff;
             min-height: 100vh;
             display: flex;
@@ -31,7 +31,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at center, #1b1430 0%, #0b0914 100%);
+            background: radial-gradient(circle at center, #1f1f23 0%, #121214 100%);
             z-index: -1;
             overflow: hidden;
         }
@@ -41,33 +41,33 @@
             width: 100%;
             height: 100%;
             background-image: 
-                radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
-                radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0,0,0,0)),
-                radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
-                radial-gradient(2px 2px at 160px 120px, #d4bfff, rgba(0,0,0,0)),
-                radial-gradient(1.5px 1.5px at 230px 180px, #ffffff, rgba(0,0,0,0)),
-                radial-gradient(2px 2px at 320px 250px, #a582ff, rgba(0,0,0,0));
+                radial-gradient(2px 2px at 25px 35px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 50px 80px, #e0e0e0, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 100px 50px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 180px 140px, #cccccc, rgba(0,0,0,0)),
+                radial-gradient(1.5px 1.5px at 250px 200px, #ffffff, rgba(0,0,0,0)),
+                radial-gradient(2px 2px at 340px 270px, #d1d1d1, rgba(0,0,0,0));
             background-repeat: repeat;
-            background-size: 350px 350px;
-            opacity: 0.6;
-            animation: twinkle 5s infinite alternate;
+            background-size: 300px 300px;
+            opacity: 0.7;
+            animation: twinkle 4s infinite alternate;
         }
 
         @keyframes twinkle {
             0% { opacity: 0.4; }
-            100% { opacity: 0.8; }
+            100% { opacity: 0.9; }
         }
 
         .container {
             width: 100%;
             max-width: 440px;
-            background: rgba(26, 21, 46, 0.55);
+            background: rgba(30, 30, 35, 0.65);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(165, 130, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 28px;
             padding: 35px 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(165, 130, 255, 0.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.3);
             text-align: center;
             position: relative;
             z-index: 1;
@@ -85,22 +85,22 @@
             height: 100%;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid rgba(212, 191, 255, 0.5);
-            box-shadow: 0 0 20px rgba(165, 130, 255, 0.4);
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
 
         .profile-name {
             font-size: 26px;
             font-weight: 700;
-            color: #f0ebff;
+            color: #ffffff;
             margin-bottom: 8px;
             letter-spacing: 1px;
-            text-shadow: 0 0 10px rgba(165, 130, 255, 0.5);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
         }
 
         .profile-bio {
             font-size: 14px;
-            color: #bfaee3;
+            color: #b0b0b8;
             margin-bottom: 30px;
             line-height: 1.6;
         }
@@ -113,101 +113,4 @@
 
         .link-btn {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: rgba(43, 34, 77, 0.6);
-            border: 1px solid rgba(165, 130, 255, 0.25);
-            padding: 14px 20px;
-            border-radius: 16px;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .link-btn:hover {
-            background: rgba(69, 54, 122, 0.8);
-            border-color: rgba(212, 191, 255, 0.6);
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(165, 130, 255, 0.3);
-        }
-
-        .link-content {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .link-icon {
-            font-size: 20px;
-        }
-
-        .footer {
-            margin-top: 30px;
-            font-size: 12px;
-            color: #8c7ba8;
-            letter-spacing: 0.5px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="space-bg">
-        <div class="stars"></div>
-    </div>
-
-    <div class="container">
-        <div class="avatar-container">
-            <img src="بستي.jpg" alt="Mnt" class="avatar">
-        </div>
-
-        <h1 class="profile-name">Mnt</h1>
-        <p class="profile-bio">مكاننا البسيط يحلى بوجودك 🌌✨</p>
-
-        <div class="links-list">
-            <!-- قناة الكيك -->
-            <a href="https://kick.com/0mnt0" target="_blank" class="link-btn">
-                <div class="link-content">
-                    <span class="link-icon">📺</span>
-                    <span>قناة Kick</span>
-                </div>
-                <span>➔</span>
-            </a>
-
-            <!-- سيرفر الديسكورد -->
-            <a href="https://discord.gg/MGJPFpqEr" target="_blank" class="link-btn">
-                <div class="link-content">
-                    <span class="link-icon">💬</span>
-                    <span>سيرفر الديسكورد</span>
-                </div>
-                <span>➔</span>
-            </a>
-
-            <!-- تيك توك -->
-            <a href="https://www.tiktok.com/@1mlkl" target="_blank" class="link-btn">
-                <div class="link-content">
-                    <span class="link-icon">🎵</span>
-                    <span>تيك توك</span>
-                </div>
-                <span>➔</span>
-            </a>
-
-            <!-- رابط الدعم -->
-            <a href="https://creators.sa/0mnt0" target="_blank" class="link-btn">
-                <div class="link-content">
-                    <span class="link-icon">💜</span>
-                    <span>دعم القناة (Tips)</span>
-                </div>
-                <span>➔</span>
-            </a>
-        </div>
-
-        <div class="footer">
-            Dreaming Galaxy © 2026
-        </div>
-    </div>
-
-</body>
-</html>
+            align-
