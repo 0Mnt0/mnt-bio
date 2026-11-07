@@ -14,7 +14,7 @@
         }
 
         body {
-            background-color: #121214;
+            background-color: #0b0b0e;
             color: #ffffff;
             min-height: 100vh;
             display: flex;
@@ -31,43 +31,21 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at center, #1f1f23 0%, #121214 100%);
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
             z-index: -1;
-            overflow: hidden;
-        }
-
-        .stars {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background-image: 
-                radial-gradient(2px 2px at 25px 35px, #ffffff, rgba(0,0,0,0)),
-                radial-gradient(2px 2px at 50px 80px, #e0e0e0, rgba(0,0,0,0)),
-                radial-gradient(1.5px 1.5px at 100px 50px, #ffffff, rgba(0,0,0,0)),
-                radial-gradient(2px 2px at 180px 140px, #cccccc, rgba(0,0,0,0)),
-                radial-gradient(1.5px 1.5px at 250px 200px, #ffffff, rgba(0,0,0,0)),
-                radial-gradient(2px 2px at 340px 270px, #d1d1d1, rgba(0,0,0,0));
-            background-repeat: repeat;
-            background-size: 300px 300px;
-            opacity: 0.7;
-            animation: twinkle 4s infinite alternate;
-        }
-
-        @keyframes twinkle {
-            0% { opacity: 0.4; }
-            100% { opacity: 0.9; }
         }
 
         .container {
             width: 100%;
             max-width: 440px;
-            background: rgba(30, 30, 35, 0.65);
+            background: rgba(18, 18, 22, 0.65);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.12);
             border-radius: 28px;
             padding: 35px 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
             text-align: center;
             position: relative;
             z-index: 1;
@@ -86,7 +64,7 @@
             border-radius: 50%;
             object-fit: cover;
             border: 3px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
         }
 
         .profile-name {
@@ -95,12 +73,12 @@
             color: #ffffff;
             margin-bottom: 8px;
             letter-spacing: 1px;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .profile-bio {
             font-size: 14px;
-            color: #b0b0b8;
+            color: #c0c0cb;
             margin-bottom: 30px;
             line-height: 1.6;
         }
@@ -115,8 +93,8 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background: rgba(45, 45, 53, 0.7);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(35, 35, 42, 0.75);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             padding: 14px 20px;
             border-radius: 16px;
             color: #ffffff;
@@ -124,14 +102,14 @@
             font-weight: 500;
             font-size: 16px;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
         .link-btn:hover {
-            background: rgba(65, 65, 77, 0.9);
-            border-color: rgba(255, 255, 255, 0.25);
+            background: rgba(55, 55, 65, 0.9);
+            border-color: rgba(255, 255, 255, 0.3);
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
         }
 
         .link-content {
@@ -147,20 +125,18 @@
         .footer {
             margin-top: 30px;
             font-size: 12px;
-            color: #7a7a85;
+            color: #8a8a98;
             letter-spacing: 0.5px;
         }
     </style>
 </head>
 <body>
 
-    <div class="space-bg">
-        <div class="stars"></div>
-    </div>
+    <div class="space-bg"></div>
 
     <div class="container">
         <div class="avatar-container">
-            <img src="بستي.jpg" alt="Mnt" class="avatar">
+            <img src="avatar.jpg" alt="Mnt" class="avatar">
         </div>
 
         <h1 class="profile-name">Mnt</h1>
