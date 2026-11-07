@@ -25,7 +25,6 @@
             padding: 20px;
         }
 
-        /* خلفية النجوم والغيوم الفضائية */
         .space-bg {
             position: fixed;
             top: 0;
@@ -59,7 +58,6 @@
             100% { opacity: 0.8; }
         }
 
-        /* حاوية الصفحة الرئيسية */
         .container {
             width: 100%;
             max-width: 440px;
@@ -75,7 +73,6 @@
             z-index: 1;
         }
 
-        /* صورة البروفایل */
         .avatar-container {
             position: relative;
             width: 110px;
@@ -92,7 +89,6 @@
             box-shadow: 0 0 20px rgba(165, 130, 255, 0.4);
         }
 
-        /* الاسم */
         .profile-name {
             font-size: 26px;
             font-weight: 700;
@@ -109,7 +105,6 @@
             line-height: 1.6;
         }
 
-        /* الروابط وأزرار التوجيه */
         .links-list {
             display: flex;
             flex-direction: column;
@@ -149,32 +144,11 @@
             font-size: 20px;
         }
 
-        /* حقوق التذييل */
         .footer {
             margin-top: 30px;
             font-size: 12px;
             color: #8c7ba8;
             letter-spacing: 0.5px;
-        }
-
-        /* إشعار النسخ */
-        .toast {
-            position: fixed;
-            bottom: 30px;
-            background: #2b224d;
-            color: #d4bfff;
-            padding: 10px 20px;
-            border-radius: 12px;
-            border: 1px solid rgba(165, 130, 255, 0.4);
-            font-size: 14px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            pointer-events: none;
-            z-index: 1000;
-        }
-        .toast.show {
-            opacity: 1;
         }
     </style>
 </head>
@@ -185,16 +159,13 @@
     </div>
 
     <div class="container">
-        <!-- صورة البروفايل (قطوة النجوم) -->
         <div class="avatar-container">
-            <!-- ملاحظة: ضעי رابط صورتك هنا أو احفظيها بنفس اسم الملف img.jpg -->
             <img src="بستي.jpg" alt="Mnt" class="avatar">
         </div>
 
         <h1 class="profile-name">Mnt</h1>
         <p class="profile-bio">مكاننا البسيط يحلى بوجودك 🌌✨</p>
 
-        <!-- قائمة الروابط -->
         <div class="links-list">
             <!-- قناة الكيك -->
             <a href="https://kick.com/0mnt0" target="_blank" class="link-btn">
@@ -206,10 +177,19 @@
             </a>
 
             <!-- سيرفر الديسكورد -->
-            <a href="رابط_الديسكورد_هنا" target="_blank" class="link-btn">
+            <a href="https://discord.gg/MGJPFpqEr" target="_blank" class="link-btn">
                 <div class="link-content">
                     <span class="link-icon">💬</span>
                     <span>سيرفر الديسكورد</span>
+                </div>
+                <span>➔</span>
+            </a>
+
+            <!-- تيك توك -->
+            <a href="https://www.tiktok.com/@1mlkl" target="_blank" class="link-btn">
+                <div class="link-content">
+                    <span class="link-icon">🎵</span>
+                    <span>تيك توك</span>
                 </div>
                 <span>➔</span>
             </a>
@@ -222,23 +202,12 @@
                 </div>
                 <span>➔</span>
             </a>
-
-            <!-- تيك توك / منصة أخرى -->
-            <a href="رابط_تيكتوك_هنا" target="_blank" class="link-btn">
-                <div class="link-content">
-                    <span class="link-icon">🎵</span>
-                    <span>تيك توك</span>
-                </div>
-                <span>➔</span>
-            </a>
         </div>
 
         <div class="footer">
             Dreaming Galaxy © 2026
         </div>
     </div>
-
-    <div id="toast" class="toast">تم النسخ بنجاح! ✨</div>
 
 </body>
 </html>
